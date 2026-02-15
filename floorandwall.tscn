@@ -226,16 +226,16 @@ mesh = ExtResource("6_fv8jv")
 transform = Transform3D(4.3711392e-08, 0, 1.0000001, 0, 1, 0, -1.0000001, 0, 4.3711392e-08, -3, 0.5, 2)
 mesh = ExtResource("6_fv8jv")
 
-[node name="WallTilesKitchenStraight3" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, -7)
-mesh = ExtResource("6_fv8jv")
-
 [node name="WallTilesKitchenStraight14" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -7)
 mesh = ExtResource("6_fv8jv")
 
 [node name="WallTilesKitchenWindow" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 9, 0.5, -4)
+mesh = ExtResource("7_tpk5a")
+
+[node name="WallTilesKitchenWindow4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1, 2, 0.5, -7)
 mesh = ExtResource("7_tpk5a")
 
 [node name="WallTilesKitchenWindow2" type="MeshInstance3D" parent="."]
