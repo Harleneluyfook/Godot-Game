@@ -1,0 +1,263 @@
+[gd_scene load_steps=5 format=3 uid="uid://dblvlppxp4uw1"]
+
+[ext_resource type="ArrayMesh" uid="uid://0e5387kod243" path="res://Assets/obj/floor_tiles_kitchen.obj" id="1_rfqdw"]
+[ext_resource type="ArrayMesh" uid="uid://bohy5i0y4ti1s" path="res://Assets/obj/wall_tiles_kitchen_straight.obj" id="6_fv8jv"]
+[ext_resource type="ArrayMesh" uid="uid://btdqpwbjqg2s7" path="res://Assets/obj/wall_tiles_kitchen_window.obj" id="7_tpk5a"]
+[ext_resource type="ArrayMesh" uid="uid://biqcn2jrjv1ae" path="res://Assets/obj/wall_tiles_kitchen_corner_inner.obj" id="8_6k38q"]
+
+[node name="Floortiles" type="Node3D"]
+
+[node name="FloorTilesKitchen" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -2)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen30" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -4)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen31" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 4)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen36" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen42" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen43" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen44" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 4)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen45" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 6)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen51" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen69" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen72" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -4)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen70" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen71" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -4)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen56" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen57" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen58" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen59" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -2)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen60" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen61" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen62" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen63" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen37" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 2)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen5" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 6)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen7" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 6)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen8" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 6)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen9" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 6)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen10" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 4)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen11" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 2)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen12" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen13" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -2)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen14" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -4)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen15" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -6)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen17" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -6)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen18" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -6)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen19" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen20" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -6)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen27" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 4)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen16" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -6)
+mesh = ExtResource("1_rfqdw")
+
+[node name="FloorTilesKitchen6" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+mesh = ExtResource("1_rfqdw")
+
+[node name="WallTilesKitchenStraight" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.5, -7)
+mesh = ExtResource("6_fv8jv")
+
+[node name="WallTilesKitchenStraight2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.5, -7)
+mesh = ExtResource("6_fv8jv")
+
+[node name="WallTilesKitchenStraight4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 9, 0.5, 2)
+mesh = ExtResource("6_fv8jv")
+
+[node name="WallTilesKitchenStraight6" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 9, 0.5, -2)
+mesh = ExtResource("6_fv8jv")
+
+[node name="WallTilesKitchenStraight7" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 9, 0.5, 0)
+mesh = ExtResource("6_fv8jv")
+
+[node name="WallTilesKitchenStraight5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.0000001, 0, 0, 0, 1, 0, 0, 0, -1.0000001, 6, 0.5, 7)
+mesh = ExtResource("6_fv8jv")
+
+[node name="WallTilesKitchenStraight8" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.0000001, 0, 0, 0, 1, 0, 0, 0, -1.0000001, 4, 0.5, 7)
+mesh = ExtResource("6_fv8jv")
+
+[node name="WallTilesKitchenStraight9" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.0000001, 0, 0, 0, 1, 0, 0, 0, -1.0000001, 0, 0.5, 7)
+mesh = ExtResource("6_fv8jv")
+
+[node name="WallTilesKitchenStraight10" type="MeshInstance3D" parent="."]
+transform = Transform3D(4.3711392e-08, 0, 1.0000001, 0, 1, 0, -1.0000001, 0, 4.3711392e-08, -3, 0.5, 4)
+mesh = ExtResource("6_fv8jv")
+
+[node name="WallTilesKitchenStraight11" type="MeshInstance3D" parent="."]
+transform = Transform3D(4.3711392e-08, 0, 1.0000001, 0, 1, 0, -1.0000001, 0, 4.3711392e-08, -3, 0.5, -2)
+mesh = ExtResource("6_fv8jv")
+
+[node name="WallTilesKitchenStraight15" type="MeshInstance3D" parent="."]
+transform = Transform3D(4.3711392e-08, 0, 1.0000001, 0, 1, 0, -1.0000001, 0, 4.3711392e-08, -3, 0.5, -4)
+mesh = ExtResource("6_fv8jv")
+
+[node name="WallTilesKitchenStraight12" type="MeshInstance3D" parent="."]
+transform = Transform3D(4.3711392e-08, 0, 1.0000001, 0, 1, 0, -1.0000001, 0, 4.3711392e-08, -3, 0.5, 0)
+mesh = ExtResource("6_fv8jv")
+
+[node name="WallTilesKitchenStraight13" type="MeshInstance3D" parent="."]
+transform = Transform3D(4.3711392e-08, 0, 1.0000001, 0, 1, 0, -1.0000001, 0, 4.3711392e-08, -3, 0.5, 2)
+mesh = ExtResource("6_fv8jv")
+
+[node name="WallTilesKitchenStraight3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, -7)
+mesh = ExtResource("6_fv8jv")
+
+[node name="WallTilesKitchenStraight14" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -7)
+mesh = ExtResource("6_fv8jv")
+
+[node name="WallTilesKitchenWindow" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 9, 0.5, -4)
+mesh = ExtResource("7_tpk5a")
+
+[node name="WallTilesKitchenWindow2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 9, 0.5, 4)
+mesh = ExtResource("7_tpk5a")
+
+[node name="WallTilesKitchenWindow3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 2, 0.5, 7)
+mesh = ExtResource("7_tpk5a")
+
+[node name="WallTilesKitchenCornerInner" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 9, 0.5, -7)
+mesh = ExtResource("8_6k38q")
+
+[node name="WallTilesKitchenCornerInner2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 9, 0.5, 7)
+mesh = ExtResource("8_6k38q")
+
+[node name="WallTilesKitchenCornerInner3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -3, 0.5, 7)
+mesh = ExtResource("8_6k38q")
+
+[node name="WallTilesKitchenCornerInner5" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, -3, 0.5, -7)
+mesh = ExtResource("8_6k38q")

@@ -1,0 +1,89 @@
+[gd_scene load_steps=13 format=3 uid="uid://chag506am88m"]
+
+[ext_resource type="Script" uid="uid://d2hvou55sbm58" path="res://2d_player.gd" id="1_1h5gy"]
+[ext_resource type="Texture2D" uid="uid://de8n6ipo6keib" path="res://sheets/DinoSprites - mort.png" id="2_nvmo8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1j5a6"]
+atlas = ExtResource("2_nvmo8")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ncw5"]
+atlas = ExtResource("2_nvmo8")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uxje5"]
+atlas = ExtResource("2_nvmo8")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_evoy7"]
+atlas = ExtResource("2_nvmo8")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ryve"]
+atlas = ExtResource("2_nvmo8")
+region = Rect2(96, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2pj1e"]
+atlas = ExtResource("2_nvmo8")
+region = Rect2(120, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wgoxc"]
+atlas = ExtResource("2_nvmo8")
+region = Rect2(144, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_55vbm"]
+atlas = ExtResource("2_nvmo8")
+region = Rect2(168, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_scijg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1j5a6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ncw5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uxje5")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_evoy7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ryve")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2pj1e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wgoxc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_55vbm")
+}],
+"loop": true,
+"name": &"run",
+"speed": 3.0
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tscpq"]
+size = Vector3(1.2456055, 1.3803711, 1)
+
+[node name="2dPlayer" type="CharacterBody3D"]
+script = ExtResource("1_1h5gy")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_scijg")
+animation = &"run"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.122802734, -0.03100586, 0)
+shape = SubResource("BoxShape3D_tscpq")
