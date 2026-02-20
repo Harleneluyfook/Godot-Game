@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b64c81mu5y26"
+path="res://.godot/imported/cinnamon_roll.obj-da9fa7f1a54e4d2dd287e86a525ca8db.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cinnamon_roll.obj-da9fa7f1a54e4d2dd287e86a525ca8db.mesh"]
+
+source_file="res://Assets/treats/obj/cinnamon_roll.obj"
+dest_files=["res://.godot/imported/cinnamon_roll.obj-da9fa7f1a54e4d2dd287e86a525ca8db.mesh", "res://.godot/imported/cinnamon_roll.obj-da9fa7f1a54e4d2dd287e86a525ca8db.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

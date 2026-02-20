@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c4vsyl6yhbig8"
+path="res://.godot/imported/baguette.obj-12ffd2053bd4f1d08bea92bef8cac386.mesh"
+
+[deps]
+
+files=["res://.godot/imported/baguette.obj-12ffd2053bd4f1d08bea92bef8cac386.mesh"]
+
+source_file="res://Assets/treats/obj/baguette.obj"
+dest_files=["res://.godot/imported/baguette.obj-12ffd2053bd4f1d08bea92bef8cac386.mesh", "res://.godot/imported/baguette.obj-12ffd2053bd4f1d08bea92bef8cac386.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

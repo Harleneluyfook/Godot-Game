@@ -1,14 +1,21 @@
-[gd_scene load_steps=5 format=3 uid="uid://didbqjhfchujv"]
+[gd_scene load_steps=11 format=3 uid="uid://didbqjhfchujv"]
 
 [ext_resource type="PackedScene" uid="uid://dblvlppxp4uw1" path="res://floorandwall.tscn" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://dij8i0ce20t4" path="res://main.gd" id="1_kek77"]
 [ext_resource type="PackedScene" uid="uid://chag506am88m" path="res://2D_Player.tscn" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://boor6b7cs5jyb" path="res://Furnitures.tscn" id="2_h2yge"]
+[ext_resource type="Script" uid="uid://bcdhlj463y0sp" path="res://treat_spawner.gd" id="4_5vw27"]
+[ext_resource type="PackedScene" uid="uid://cojwgpwqv3664" path="res://cookie.tscn" id="5_kek77"]
+[ext_resource type="PackedScene" uid="uid://djom11hmssu08" path="res://cupcake.tscn" id="6_4c57u"]
+[ext_resource type="PackedScene" uid="uid://dtuqb5jst4evi" path="res://cinnamon_roll.tscn" id="7_efxa6"]
+[ext_resource type="Script" uid="uid://6aqbegtlbw2g" path="res://canvas_layer.gd" id="8_dg77c"]
 
 [sub_resource type="Environment" id="Environment_0xm2m"]
 background_mode = 1
 background_color = Color(0.735357, 0.85430586, 1, 1)
 
-[node name="Main" type="Node3D"]
+[node name="Main" type="Node3D" groups=["main"]]
+script = ExtResource("1_kek77")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.85496616, -0.51868373, 0, 0.51868373, 0.85496616, 0, 0, 0, 1, 2.2686367, 14.700272, 4.9752746)
@@ -17,10 +24,218 @@ sky_mode = 1
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_0xm2m")
 
-[node name="Floortiles" parent="." instance=ExtResource("1_ig7tw")]
+[node name="Floortiles" parent="." groups=["main"] instance=ExtResource("1_ig7tw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.018496513, 0)
 
 [node name="Furnitures" parent="." instance=ExtResource("2_h2yge")]
 
 [node name="2dPlayer" parent="." instance=ExtResource("2_0xm2m")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1.7734127, 0)
+
+[node name="TreatSpawner" type="Node3D" parent="."]
+script = ExtResource("4_5vw27")
+treat_scenes = Array[PackedScene]([ExtResource("7_efxa6"), ExtResource("6_4c57u"), ExtResource("5_kek77")])
+
+[node name="SpawnPoints" type="Node3D" parent="TreatSpawner"]
+
+[node name="Marker3D" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.2372284, 1.9363797, -0.85279334)
+gizmo_extents = 1.0
+
+[node name="Marker3D2" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9058487, 1.8179698, 1.9908433)
+gizmo_extents = 1.0
+
+[node name="Marker3D3" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.103089, 1.8179698, 0.7333114)
+gizmo_extents = 1.0
+
+[node name="Marker3D4" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1088339, 1.2308743, 0.7333114)
+gizmo_extents = 1.0
+
+[node name="Marker3D5" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14233243, 1.2308743, 2.1366005)
+gizmo_extents = 1.0
+
+[node name="Marker3D43" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8689901, 1.2308743, 2.1366005)
+gizmo_extents = 1.0
+
+[node name="Marker3D44" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8689901, 1.2308743, 5.699188)
+gizmo_extents = 1.0
+
+[node name="Marker3D45" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.686647, 1.2308743, 5.699188)
+gizmo_extents = 1.0
+
+[node name="Marker3D42" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14233243, 1.2308743, 3.6750116)
+gizmo_extents = 1.0
+
+[node name="Marker3D6" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6737305, 1.2308743, 4.4058247)
+gizmo_extents = 1.0
+
+[node name="Marker3D7" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.19704187, 1.2308743, 5.5422144)
+gizmo_extents = 1.0
+
+[node name="Marker3D8" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.363161, 1.2308743, 3.7600274)
+gizmo_extents = 1.0
+
+[node name="Marker3D9" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.2914305, 1.2308743, 4.633388)
+gizmo_extents = 1.0
+
+[node name="Marker3D10" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5800996, 1.2308743, 5.7607927)
+gizmo_extents = 1.0
+
+[node name="Marker3D11" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.4823556, 1.2308743, 3.0842285)
+gizmo_extents = 1.0
+
+[node name="Marker3D26" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.711263, 1.2308743, 1.0805445)
+gizmo_extents = 1.0
+
+[node name="Marker3D27" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.1791816, 1.2308743, 1.7148786)
+gizmo_extents = 1.0
+
+[node name="Marker3D28" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.1791816, 1.2308743, -0.23907971)
+gizmo_extents = 1.0
+
+[node name="Marker3D29" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.0747213, 1.2308743, -1.4085226)
+gizmo_extents = 1.0
+
+[node name="Marker3D30" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.343125, 1.2308743, -2.424521)
+gizmo_extents = 1.0
+
+[node name="Marker3D31" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.343125, 1.2308743, -3.9446266)
+gizmo_extents = 1.0
+
+[node name="Marker3D32" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.9624543, 1.2308743, -3.9446266)
+gizmo_extents = 1.0
+
+[node name="Marker3D33" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.7239203, 1.2308743, -3.9446266)
+gizmo_extents = 1.0
+
+[node name="Marker3D34" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.7239203, 1.2308743, -2.9365277)
+gizmo_extents = 1.0
+
+[node name="Marker3D35" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9637141, 1.2308743, -2.9365277)
+gizmo_extents = 1.0
+
+[node name="Marker3D36" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9637141, 1.2308743, -4.5685635)
+gizmo_extents = 1.0
+
+[node name="Marker3D37" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.38908386, 1.2308743, -4.5685635)
+gizmo_extents = 1.0
+
+[node name="Marker3D38" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.38908386, 1.2308743, -3.39401)
+gizmo_extents = 1.0
+
+[node name="Marker3D39" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.38908386, 1.2308743, -2.0366554)
+gizmo_extents = 1.0
+
+[node name="Marker3D40" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.69679785, 1.2308743, -0.5753269)
+gizmo_extents = 1.0
+
+[node name="Marker3D41" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.69679785, 1.2308743, -0.5753269)
+gizmo_extents = 1.0
+
+[node name="Marker3D12" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.1160283, 1.2308743, 4.77415)
+gizmo_extents = 1.0
+
+[node name="Marker3D13" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.0414586, 1.2308743, 5.742318)
+gizmo_extents = 1.0
+
+[node name="Marker3D14" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.053259, 2.0335152, 4.135644)
+gizmo_extents = 1.0
+
+[node name="Marker3D15" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.053259, 2.0335152, 0.40178776)
+gizmo_extents = 1.0
+
+[node name="Marker3D16" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.053259, 2.0335152, -2.912064)
+gizmo_extents = 1.0
+
+[node name="Marker3D17" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.053259, 2.0335152, -5.833668)
+gizmo_extents = 1.0
+
+[node name="Marker3D18" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4658594, 2.0335152, -5.833668)
+gizmo_extents = 1.0
+
+[node name="Marker3D19" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.930284, 2.0335152, -5.833668)
+gizmo_extents = 1.0
+
+[node name="Marker3D20" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1515372, 2.0335152, -5.833668)
+gizmo_extents = 1.0
+
+[node name="Marker3D21" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8060919, 2.0335152, -4.149944)
+gizmo_extents = 1.0
+
+[node name="Marker3D22" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0865316, 2.0335152, -3.1606631)
+gizmo_extents = 1.0
+
+[node name="Marker3D23" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.6043606, 4.2019167, -5.6590705)
+gizmo_extents = 1.0
+
+[node name="Marker3D24" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22629261, 3.7625656, -5.6590705)
+gizmo_extents = 1.0
+
+[node name="Marker3D25" type="Marker3D" parent="TreatSpawner/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1045895, 3.7625656, -3.8416693)
+gizmo_extents = 1.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." groups=["ui"]]
+script = ExtResource("8_dg77c")
+
+[node name="ScoreLabel" type="Label" parent="CanvasLayer"]
+offset_left = 20.0
+offset_top = 15.0
+offset_right = 148.0
+offset_bottom = 49.0
+theme_override_font_sizes/font_size = 24
+text = "Score: 0/10"
+
+[node name="TimerBar" type="ProgressBar" parent="CanvasLayer"]
+offset_left = 18.0
+offset_top = 56.0
+offset_right = 237.0
+offset_bottom = 96.0
+max_value = 60.0
+value = 60.0
+show_percentage = false
+
+[node name="Timer" type="Timer" parent="."]

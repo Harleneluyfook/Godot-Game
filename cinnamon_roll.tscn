@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dtuqb5jst4evi"]
+
+[ext_resource type="Script" uid="uid://bj5ak7xqdg8mx" path="res://cinnamon_roll.gd" id="1_62vki"]
+[ext_resource type="ArrayMesh" uid="uid://b64c81mu5y26" path="res://Assets/treats/obj/cinnamon_roll.obj" id="1_72mpt"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_62vki"]
+
+[node name="Area3D" type="Area3D"]
+script = ExtResource("1_62vki")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_62vki")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.2596306, 0, 0, 0, 1.2471598, 0, 0, 0, 1.2733473, 0, 0, 0)
+mesh = ExtResource("1_72mpt")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://djom11hmssu08"]
+
+[ext_resource type="ArrayMesh" uid="uid://lt2xs4no7t06" path="res://Assets/treats/obj/cupcake.obj" id="1_ukloy"]
+[ext_resource type="Script" uid="uid://neab3jxki0de" path="res://cupcake.gd" id="1_xtrhd"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_xtrhd"]
+
+[node name="Area3D" type="Area3D"]
+script = ExtResource("1_xtrhd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_xtrhd")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.54, 0, 0, 0, 1.2, 0, 0, 0, 1.573, 0, -0.1842798, 0)
+mesh = ExtResource("1_ukloy")
+skeleton = NodePath("../CollisionShape3D")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

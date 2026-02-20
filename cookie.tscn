@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cojwgpwqv3664"]
+
+[ext_resource type="ArrayMesh" uid="uid://cjid20p43op7t" path="res://Assets/treats/obj/cookie.obj" id="1_0fkkf"]
+[ext_resource type="Script" uid="uid://2a2q6e77ahom" path="res://cookie.gd" id="1_4g1sd"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_4g1sd"]
+
+[node name="Area3D" type="Area3D"]
+script = ExtResource("1_4g1sd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_4g1sd")
+debug_color = Color(0.5686601, 0.5219648, 0.5213657, 0.41960785)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.3253466, 0, 0, 0, 1.1698022, 0, 0, 0, 1.3629621, 0, 0, 0)
+mesh = ExtResource("1_0fkkf")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
