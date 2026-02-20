@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://j5byymwqwbsq"]
+
+[ext_resource type="Script" uid="uid://cu0f30imo6eck" path="res://character_body_3d.gd" id="1_fb3t6"]
+[ext_resource type="Texture2D" uid="uid://dgof6g6htvobb" path="res://sheets/Small-8-Direction-Characters_by_AxulArt.png" id="2_vd578"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c7tqt"]
+size = Vector3(0.114746094, 0.17047119, 0.14556885)
+
+[sub_resource type="Animation" id="Animation_nl27k"]
+resource_name = "walk"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_obynr"]
+_data = {
+&"walk": SubResource("Animation_nl27k")
+}
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
+script = ExtResource("1_fb3t6")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
+billboard = 1
+shaded = true
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("2_vd578")
+hframes = 8
+vframes = 12
+frame = 8
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -0.00024414063, -0.02456665, 0.0013122559)
+shape = SubResource("BoxShape3D_c7tqt")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0.02096352, 0.003907591, 1.445866)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_obynr")
+}
