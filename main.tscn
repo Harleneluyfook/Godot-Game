@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://didbqjhfchujv"]
+[gd_scene load_steps=6 format=3 uid="uid://didbqjhfchujv"]
 
 [ext_resource type="PackedScene" uid="uid://dblvlppxp4uw1" path="res://floorandwall.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://chag506am88m" path="res://2D_Player.tscn" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://boor6b7cs5jyb" path="res://Furnitures.tscn" id="2_h2yge"]
+[ext_resource type="AudioStream" uid="uid://b8ofb1kart40i" path="res://Assets/music/Sketchbook 2024-08-01.ogg" id="4_1bvp3"]
 
 [sub_resource type="Environment" id="Environment_0xm2m"]
 background_mode = 1
@@ -24,3 +25,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.018496513, 0)
 
 [node name="2dPlayer" parent="." instance=ExtResource("2_0xm2m")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1.7734127, 0)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.54689133, 0.8372036, 0, -0.8372036, 0.54689133, 2.7460961, 6.049888, 5.667634)
+fov = 86.83217
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("4_1bvp3")
+autoplay = true

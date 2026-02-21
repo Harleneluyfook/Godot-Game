@@ -759,7 +759,7 @@ mesh = ExtResource("43_02opq")
 shape = SubResource("ConcavePolygonShape3D_qs6hl")
 
 [node name="ContainerKitchenAWhite" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0824065, 1.4996493, -1.3400689)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.082068, 1.497671, -1.3397123)
 mesh = ExtResource("44_4sd2r")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ContainerKitchenAWhite"]
